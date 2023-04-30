@@ -1,0 +1,110 @@
+// const app = require("./app")
+// console.log(app.z())
+
+// const fs = require("fs")
+// fs.writeFileSync(("hello.txt", "hii madhav"))
+// console.log("===", __dirname)
+// console.log("===", __filename)
+
+// const http = require("http")
+
+// http
+// 	.createServer((req, resp) => {
+// 		resp.write("<h1>Hello this is madhav vanalwar</h1>")
+// 		resp.end()
+// 	})
+// 	.listen(4500)
+
+// const colors = require("colors")
+// console.log("hello".red)
+
+// const http = require("http")
+// const data = require("./data")
+// http
+// 	.createServer((req, resp) => {
+// 		resp.writeHead(200, { "Content-Type": "application/json" })
+// 		resp.write(JSON.stringify(data))
+// 		resp.end()
+// 	})
+// 	.listen(5000)
+
+// console.log(process.argv)
+
+// const fs = require("fs")
+// const input = process.argv
+// // fs.writeFileSync(input[3], input[4])
+// if (input[2] == "add") {
+// 	fs.writeFileSync(input[3], input[4])
+// } else if (input[2] == "remove") {
+// 	fs.unlinkSync(input[3])
+// } else {
+// 	console.log("invalid input")
+// }
+
+// const fs = require("fs")
+// fs.writeFileSync("apple.txt", "this is a apple files")
+// const path = require("path")
+// const dirPath = path.join(__dirname, "files")
+// console.log(dirPath)
+// for (i = 0; i < 5; i++) {
+// 	fs.writeFileSync(dirPath + "/hello" + i + ".txt", "a simple text file")
+// 	// fs.writeFileSync(`hello ${i}.txt`, "a simple text file")
+// }
+
+// fs.readdir(dirPath, (arr, files) => {
+// 	// console.log(files)
+// 	files.forEach((item) => {
+// 		console.log(item)
+// 	})
+// })
+
+// const fs = require("fs")
+// const path = require("path")
+// const dirPath = path.join(__dirname, "crud")
+// const filePath = `${dirPath}/apple.txt`
+
+// fs.writeFileSync(filePath, "This is a simple text file")
+// fs.readFile(filePath, "utf8", (err, item) => {
+// 	console.log(item)
+// })
+
+// fs.appendFile(filePath, "and file name is apple.tex", (err) => {
+// 	if (!err) console.log("file is updated")
+// })
+
+// fs.rename(filePath, `${dirPath}/fruit.txt`, (err) => {
+// 	if (!err) console.log("file name is updated")
+// })
+
+// fs.unlinkSync(`${dirPath}/fruit.txt`)
+
+// console.log("start exe...")
+// console.log("logic exe...")
+// console.log("complete exe...")
+
+// console.log("start exe...")
+// setTimeout(() => {
+// 	console.log("logic exe...")
+// }, 1000)
+// console.log("complete exe...")
+
+// let a = 10
+// let b = 0
+// setTimeout(() => {
+// 	b = 20
+// }, 2000)
+
+// console.log(a + b)
+
+// let a = 10
+// let b = 0
+
+// let waitingData = new Promise((resolve, reject) => {
+// 	setTimeout(() => {
+// 		resolve(30)
+// 	}, 2000)
+// })
+// waitingData.then((data) => {
+// 	b = data
+// 	console.log(a + b)
+// })
